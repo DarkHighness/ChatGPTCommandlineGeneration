@@ -20,3 +20,7 @@ cargo install --locked --path .
 ```
 
 ## 演示
+
+![Screenshot 1](./screenshots/screenshots_1.png)
+
+![Screenshot 1](./screenshots/screenshots_2.png)
