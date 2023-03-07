@@ -2,12 +2,14 @@
 
 一个利用 ChatGPT 生成命令行的小工具
 
-## 环境准备
+A small tool that uses ChatGPT to generate a command line
 
-1. `OPENAI_API_KEY` ：OpenAI 的 API KEY
-2. `HTTPS_PROXY`: 一个 ChatGPT 可用的代理工具
+## Enviroment
 
-## 编译安装
+1. `OPENAI_API_KEY` ：OpenAI API KEY
+2. `HTTPS_PROXY`: A ChatGPT available proxy (optional)
+
+## Install
 
 ```bash
 cargo build --release --locked
@@ -19,8 +21,25 @@ cargo build --release --locked
 cargo install --locked --path . 
 ```
 
-## 演示
+## zsh Plugin
+
+1. put `/plugins/` under `$ZSH_CUSTOM`
+(by default: `~/.oh-my-zsh/custom/plugins/cg/cg.plugin.zsh`)，
+2. Add the plugin to the list of plugins for Oh My Zsh to load (inside  `.zshrc`)
+
+```zsh
+plugins=( 
+    # other plugins...
+    cg
+)
+```
+
+## Screenshots
 
 ![Screenshot 1](./screenshots/screenshots_1.png)
 
-![Screenshot 1](./screenshots/screenshots_2.png)
+![Screenshot 2](./screenshots/screenshots_2.png)
+
+![Screenshot 3](./screenshots/screenshots_3.png)
+
+![Screenshot 4](./screenshots/screenshots_4.png)
